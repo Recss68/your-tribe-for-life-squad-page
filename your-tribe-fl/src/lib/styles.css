@@ -1,0 +1,75 @@
+:root {
+  /* Background */
+  --color-bg-dark: #121124;
+  --color-bg-light: #F2F0EF;
+
+  /* Text */
+  --color-text-dark: #121124;
+  --color-text-light: #F2F0EF;
+
+  /* Highlight */
+  --color-highlight: #346491;
+
+  /* Button */
+  --color-button-bg: rgba(255, 255, 255, 0.2); /* liquid-glass effect */
+  --color-button-border: rgba(255, 255, 255, 0.4);
+  --color-button-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Backgrounds */
+.bg-dark {
+  background-color: var(--color-bg-dark);
+}
+
+.bg-light {
+  background-color: var(--color-bg-light);
+}
+
+/* Text colors */
+.text-dark {
+  color: var(--color-text-dark);
+}
+
+.text-light {
+  color: var(--color-text-light);
+}
+
+.text-highlight {
+  color: var(--color-highlight);
+  font-weight: 500;
+}
+
+/* Typography */
+.h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-weight: 500; /* Roboto Medium */
+  margin-bottom: 1rem;
+}
+
+.p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400; /* Roboto Regular */
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background: var(--color-button-bg);
+  border: 1px solid var(--color-button-border);
+  backdrop-filter: blur(10px);
+  color: var(--color-text-dark);
+  box-shadow: 0 4px 10px var(--color-button-shadow);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px var(--color-button-shadow);
+}
