@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 :root {
   /* ------------------ Background ------------------ */
   --color-bg-dark: #180E01;
@@ -11,38 +13,35 @@
   --btn-radius: 999px;
   --btn-padding: 0.75rem 1.5rem;
   --btn-font: 'montserrat', sans-serif;
-  
+  --btn-weight: 600;
+
+  /* ------------------ Font Sizes ------------------ */
+  --size-xs: 1rem;
+  --size-s: 1.25rem;
+  --size-m: 2rem;
+  --size-l: 4rem;
+  --size-xl: 10rem;
 }
 
 /* ------------------ Background Classes ------------------ */
-.bg-dark {
-  background-color: var(--color-bg-dark);
-}
-
-.bg-light {
-  background-color: var(--color-bg-light);
-}
+.bg-dark { background-color: var(--color-bg-dark); }
+.bg-light { background-color: var(--color-bg-light); }
 
 /* ------------------ Text Classes ------------------ */
-.text-dark {
-  color: var(--color-text-dark);
-}
-
-.text-light {
-  color: var(--color-text-light);
-}
+.text-dark { color: var(--color-text-dark); }
+.text-light { color: var(--color-text-light); }
 
 /* ------------------ Typography ------------------ */
-.h1 {
+.text-h1 {
   font-family: var(--btn-font);
-  font-size: clamp(2rem, 5vw, 48px);
+  font-size: clamp(var(--size-m), 5vw, 48px);
   font-weight: 500; 
   margin-bottom: 1rem;
 }
 
-.p {
+.text-p {
   font-family: var(--btn-font);
-  font-size: clamp(1rem, 2.5vw, 20px);
+  font-size: clamp(var(--size-xs), 2.5vw, 20px);
   font-weight: 400; 
   margin-bottom: 1rem;
 }
@@ -59,13 +58,14 @@
   font-weight: var(--btn-weight);
   text-align: center;
   cursor: pointer;
-  /* color: var(--color-text-dark); */
+  transition: all var(--transition-speed) ease;
+  color: var(--color-text-dark);
 
   /* Liquid Glass Effect */
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12),
-              0 0 0 2px rgba(255, 255, 255, 0.3);
+  0 0 0 2px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -89,4 +89,10 @@
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5),
               inset -1px -1px 2px rgba(255, 255, 255, 0.3);
   z-index: 0;
+}
+
+/* Hover effect */
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.03);
 }
