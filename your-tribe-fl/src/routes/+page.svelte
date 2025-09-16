@@ -1,6 +1,7 @@
 <script>
   let { data } = $props();
   const members = data.members;
+  import { Spinning } from "$lib";
 </script>
 
 <div class="parent">
@@ -17,7 +18,7 @@
     <!-- BOTTOM LEFT GRID -->
     <div class="left-grid">
         <section class="spinner-container">
-            <h2>Placeholder for spinning text</h2>
+            <Spinning />
         </section>
     </div>
 
