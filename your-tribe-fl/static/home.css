@@ -88,7 +88,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      max-height: 60dvh;
+      max-height: 50dvh;
     }
   }
 
@@ -109,7 +109,6 @@
     }
     p {
         color: var(--color-white-text);
-        /* display: inline-flex; */
         position: relative;
         bottom: 4rem;
         
