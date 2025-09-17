@@ -47,7 +47,7 @@
       {#each members as member}
         {#if member.mugshot}
           <div class="profile-card">
-            <a href="/{member.id}" on:click={(e) => navWithVT(e, `/${member.id}`)}>
+            <a href="/{member.id}" onclick={(e) => navWithVT(e, `/${member.id}`)}>
               <img
                 src={`https://fdnd.directus.app/assets/${member.mugshot}`}
                 width="250"
