@@ -1,5 +1,4 @@
-const FALLBACK_BIO = `Lorem ipsum dolor sit amet consectetur. Vitae non id nulla neque eu suspendisse aliquet in.
-Interdum viverra facilisis ac risus scelerisque arcu. Feugiat et ullamcorper nisl orci enim venenatis nulla integer natoque.`;
+const FALLBACK_BIO = `Ik moet echt tering nodig poepen. Maar ik ben te lui om naar het toilet te lopen, dus ik hou het nog even op.`;
 
 export async function load({ params, fetch }) {
   const { id } = params;
