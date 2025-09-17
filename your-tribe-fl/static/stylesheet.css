@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 :root {
   /* ------------------ Background ------------------ */
-  --color-bg-dark: #180E01;
-  --color-bg-light: #CEC0AE;
+  --color-bg-dark: #180e01;
+  --color-bg-light: #cec0ae;
 
   /* ------------------ Text ------------------ */
-  --color-text-dark: #180E01;
-  --color-text-light: #CEC0AE;
+  --color-text-dark: #180e01;
+  --color-text-light: #cec0ae;
   --color-white-text: #fff;
   --btn-weight: 600;
 
   /* ------------------ Button System ------------------ */
   --btn-radius: 999px;
   --btn-padding: 0.75rem 1.5rem;
-  --btn-font: 'montserrat', sans-serif;
+  --btn-font: "montserrat", sans-serif;
 
   /* ------------------ Text Size ------------------ */
   --text-size-xs: clamp(0.75rem, 1.5vw, 12px);
@@ -58,7 +58,7 @@ a {
   font-weight: 500;
   margin-bottom: 1rem;
 }
- 
+
 .text-p {
   font-family: var(--btn-font);
   font-size: clamp(var(--size-xs), 2.5vw, 20px);
@@ -83,8 +83,7 @@ a {
   /* Liquid Glass Effect */
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12),
-  0 0 0 2px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 0 0 2px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -105,8 +104,7 @@ a {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5),
-  inset -1px -1px 2px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5), inset -1px -1px 2px rgba(255, 255, 255, 0.3);
   z-index: 0;
 }
 
@@ -114,4 +112,15 @@ a {
 .btn:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.03);
+}
+
+/* View transition */
+::view-transition-group(mugshot-*) {
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
 }
