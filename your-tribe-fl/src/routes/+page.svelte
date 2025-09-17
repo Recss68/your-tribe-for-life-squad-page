@@ -1,7 +1,8 @@
 <script>
+  import { ProfileCard, Spinning } from "$lib";
+
   let { data } = $props();
   const members = data.members;
-  import { Spinning } from "$lib";
 
   import { goto } from "$app/navigation";
 
@@ -19,9 +20,11 @@
   <!-- HEADING GRID -->
   <div class="top-grid">
     <section class="home-heading">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, deserunt.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, deserunt.</p>
-      <h2>Meet the members</h2>
+      <p> FDND is dé HBO-opleiding voor Frontend Development in Nederland, in twee jaar stomen wij jou klaar voor het werkveld.</p>
+      <p>Je leert bij ons niet alleen met de nieuwste technieken werken om websites te bouwen maar ook de softskills van het vak, zoals samenwerken en tijdinschatten. </p>
+      <h2>MEET 
+        THE 
+        MEMBERS</h2>
     </section>
   </div>
 
@@ -34,31 +37,6 @@
 
   <!-- BOTTOM RIGHT GRID -->
   <div class="right-grid">
-    <div class="sort-btns">
-      <form>
-        <!-- <select name="sort" id="sort"> -->
-        <option value="default">Squad 2E</option>
-        <option value="squad2h">Squad 2H</option>
-        <!-- </select> -->
-      </form>
-    </div>
-
-    <div class="profile-container">
-      {#each members as member}
-        {#if member.mugshot}
-          <div class="profile-card">
-            <a href="/{member.id}" onclick={(e) => navWithVT(e, `/${member.id}`)}>
-              <img
-                src={`https://fdnd.directus.app/assets/${member.mugshot}`}
-                width="250"
-                alt="student-{member.name}"
-                style={`view-transition-name: mugshot-${member.id}`}
-              />
-              <p>{member.name}</p>
-            </a>
-          </div>
-        {/if}
-      {/each}
-    </div>
+    <ProfileCard {members}/>
   </div>
 </div>
