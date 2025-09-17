@@ -1,6 +1,6 @@
 <script>
   import favicon from "$lib/assets/favicon.svg";
-  import Header from "$lib/components/Header.svelte";
+  import { Header } from "$lib";
 
   let { children } = $props();
 </script>
@@ -11,4 +11,6 @@
 
 <Header />
 
-{@render children?.()}
+<main>
+  {@render children?.()}
+</main>
