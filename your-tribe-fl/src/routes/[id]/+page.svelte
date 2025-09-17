@@ -129,10 +129,7 @@
       height: 2.5rem;
     }
   }
-  .iconbtn[aria-disabled="true"] {
-    opacity: 0.35;
-    pointer-events: none;
-  }
+
   .iconbtn .desk {
     display: none;
   }
