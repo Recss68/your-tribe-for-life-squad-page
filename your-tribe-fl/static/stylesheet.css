@@ -21,7 +21,8 @@
   --text-size-sm: clamp(0.875rem, 1.75vw, 14px);
   --text-size-md: clamp(1rem, 2vw, 16px);
   --text-size-lg: clamp(1.125rem, 2.25vw, 18px);
-  --text-size-xl: clamp(1.25rem, 2.5vw, 20px);
+  --text-size-xl: clamp(1.4rem, 2.5vw, 20px);
+  /* --text-size-xxl: clamp(1.5vw, 2.5vw, 20px); */
 }
 
 body {
