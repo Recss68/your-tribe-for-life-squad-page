@@ -102,7 +102,7 @@
     .topnav {
       position: sticky;
       top: 5.25rem;
-      flex-direction column;
+      flex-direction: column;
       padding: 0.75rem;
     }
   }
@@ -116,7 +116,7 @@
     padding: 0 0.8rem;
     background: var(--muted);
     color: inherit;
-    text-decoration none;
+    text-decoration: none;
     border-radius: 999px;
     font-weight: 600;
     line-height: 1;
@@ -178,8 +178,6 @@
   }
 
   /* Photo card */
-  .photo {
-  }
   @media (min-width: 1024px) {
     .photo {
       position: sticky;
@@ -208,13 +206,20 @@
     left: 50%;
     bottom: 0.9rem;
     transform: translateX(-50%);
-    background: var(--chip-bg);
     color: #fff;
     padding: 0.55rem 0.95rem;
     border-radius: 14px;
     font-weight: 600;
     backdrop-filter: blur(6px);
     white-space: nowrap;
+    padding: 0.4rem 0.8rem;   
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
   }
 
   /* Bio card */
