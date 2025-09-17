@@ -1,4 +1,4 @@
-const FALLBACK_BIO = `Ik moet echt tering nodig poepen. Maar ik ben te lui om naar het toilet te lopen, dus ik hou het nog even op.`;
+const FALLBACK_BIO = `Deze persoon heeft nog geen bio toegevoegd. Wat een gemiste kans! Wat een ongemotiveerd persoon! Maar goed dat jij hier bent om ze beter te leren kennen. Deze persoon is vast heel leuk! Deze persoon is ook een Die Hard Palestina supporter. FREE PALESTINA ✊🏽`;
 
 export async function load({ params, fetch }) {
   const { id } = params;
