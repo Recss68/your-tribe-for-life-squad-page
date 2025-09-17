@@ -25,12 +25,12 @@
     <p>{bioText}</p>
   </section>
 
-  <nav class="topnav" aria-label="Profiel navigatie">
+  <nav class="topnav">
     <a
       class="iconbtn prev"
       href={prevId ? "/" + prevId : "#"}
       tabindex={prevId ? 0 : -1}
-      on:click={(e) => {
+      onclick={(e) => {
         if (prevId) navWithVT(e, "/" + prevId);
         else {
           e.preventDefault();
@@ -39,13 +39,13 @@
       }}><span class="mob">←</span><span class="desk">↑</span></a
     >
 
-    <a class="iconbtn close" href="/" on:click={(e) => navWithVT(e, "/")}> ✕ </a>
+    <a class="iconbtn close" href="/" onclick={(e) => navWithVT(e, "/")}> ✕ </a>
 
     <a
       class="iconbtn next"
       href={nextId ? "/" + nextId : "#"}
       tabindex={nextId ? 0 : -1}
-      on:click={(e) => {
+      onclick={(e) => {
         if (nextId) navWithVT(e, "/" + nextId);
         else {
           e.preventDefault();
@@ -102,7 +102,7 @@
     .topnav {
       position: sticky;
       top: 5.25rem;
-      flex-direction: column;
+      flex-direction column;
       padding: 0.75rem;
     }
   }
@@ -116,7 +116,7 @@
     padding: 0 0.8rem;
     background: var(--muted);
     color: inherit;
-    text-decoration: none;
+    text-decoration none;
     border-radius: 999px;
     font-weight: 600;
     line-height: 1;
