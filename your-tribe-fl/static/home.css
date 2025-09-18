@@ -50,6 +50,7 @@
             display: inline-block;
             font-size: var(--text-size-xl);
             white-space: pre-line;
+            text-transform: uppercase;
         }
     }
 }
