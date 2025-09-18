@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+/* ------------------ Root Variables ------------------ */
 :root {
-  /* ------------------ Background ------------------ */
+  /* Background */
   --color-bg-dark: #180E01;
   --color-bg-light: #CEC0AE;
 
-  /* ------------------ Text ------------------ */
+  /* Text */
   --color-text-dark: #180E01;
   --color-text-light: #CEC0AE;
   --color-white-text: #fff;
   --btn-weight: 600;
 
-  /* ------------------ Button System ------------------ */
+  /* Buttons */
   --btn-radius: 999px;
   --btn-padding: 0.75rem 1.5rem;
-  --btn-font: 'montserrat', sans-serif;
+  --btn-font: 'Montserrat', sans-serif;
 
-  /* ------------------ Text Size ------------------ */
+  /* Text Sizes */
   --text-size-xs: clamp(0.75rem, 1.5vw, 12px);
   --text-size-sm: clamp(0.875rem, 1.75vw, 14px);
   --text-size-md: clamp(1rem, 2vw, 16px);
@@ -24,44 +25,47 @@
   --text-size-xl: clamp(1.25rem, 2.5vw, 20px);
 }
 
+/* ------------------ Body Modes ------------------ */
+body.bg-light {
+  --bg-color: var(--color-bg-light);
+  --text-color: var(--color-text-dark);
+}
+
+body.bg-dark {
+  --bg-color: var(--color-bg-dark);
+  --text-color: var(--color-white-text);
+}
+
+/* ------------------ Global Styles ------------------ */
 body {
-  background-color: var(--color-bg-light);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: var(--btn-font);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
+  color: var(--text-color);
   text-decoration: none;
 }
 
-/* ------------------ Background Classes ------------------ */
-.bg-dark {
-  background-color: var(--color-bg-dark);
-}
-
-.bg-light {
-  background-color: var(--color-bg-light);
-}
-
-/* ------------------ Text Classes ------------------ */
-.text-dark {
-  color: var(--color-text-dark);
-}
-
-.text-light {
-  color: var(--color-text-light);
-}
+/* ------------------ Background & Text Classes ------------------ */
+.bg-dark { background-color: var(--color-bg-dark); }
+.bg-light { background-color: var(--color-bg-light); }
+.text-dark { color: var(--color-text-dark); }
+.text-light { color: var(--color-text-light); }
 
 /* ------------------ Typography ------------------ */
 .text-h1 {
   font-family: var(--btn-font);
-  font-size: clamp(var(--size-m), 5vw, 48px);
+  font-size: clamp(1rem, 5vw, 48px);
   font-weight: 500;
   margin-bottom: 1rem;
 }
- 
+
 .text-p {
   font-family: var(--btn-font);
-  font-size: clamp(var(--size-xs), 2.5vw, 20px);
+  font-size: clamp(0.75rem, 2.5vw, 20px);
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -71,14 +75,12 @@ a {
   display: inline-block;
   position: relative;
   z-index: 1;
-
   padding: var(--btn-padding);
   border-radius: var(--btn-radius);
   font-family: var(--btn-font);
   font-weight: var(--btn-weight);
   text-align: center;
   cursor: pointer;
-  /* color: var(--color-text-dark); */
 
   /* Liquid Glass Effect */
   background: rgba(255, 255, 255, 0.2);
@@ -89,7 +91,6 @@ a {
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* Tint overlay */
 .btn::before {
   content: "";
   position: absolute;
@@ -99,18 +100,16 @@ a {
   z-index: 0;
 }
 
-/* Subtle highlights */
 .btn::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5),
-  inset -1px -1px 2px rgba(255, 255, 255, 0.3);
+              inset -1px -1px 2px rgba(255, 255, 255, 0.3);
   z-index: 0;
 }
 
-/* Hover effect */
 .btn:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.03);

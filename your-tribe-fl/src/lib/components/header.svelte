@@ -13,7 +13,7 @@
   // Function to toggle between light and dark theme
   function toggleTheme() {
     isDark = !isDark;
-    // Add bg-dark class if isDark is true, otherwise bg-light
+  // Add bg-dark class if isDark is true, otherwise bg-light
     document.body.classList.toggle('bg-dark', isDark);
     document.body.classList.toggle('bg-light', !isDark);
   }
@@ -35,10 +35,12 @@
 </script>
 
 <header class="header">
-  <!-- Left side of the header: logo -->
-  <div class="header-left">
+<!-- Left side of the header: logo -->
+<div class="header-left">
+  <a href="/">
     <img src={logo} alt="Logo" class="logo" />
-  </div>
+  </a>
+</div>
 
   <!-- Center of the header: title -->
   <div class="header-center">

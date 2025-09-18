@@ -57,14 +57,14 @@
      Circular text container
   --------------------------------------------- */
   .seal {
-    position: relative;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    animation: rotation var(--speed) linear infinite; /* continuous rotation */
-    font-family: 'Montserrat', sans-serif;
-    font-size: var(--font);
-    color: var(--color-text-dark);
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  animation: rotation var(--speed) linear infinite; /* continuous rotation */
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--font);
+  color: var(--text-color); /* <-- gebruik de globale variabele */
   }
   /* ---------------------------------------------
      Individual characters positioned around the circle
