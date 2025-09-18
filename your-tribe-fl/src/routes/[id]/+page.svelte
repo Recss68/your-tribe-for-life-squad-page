@@ -82,7 +82,7 @@
   .topnav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 0.75rem;
     background: var(--card);
     border-radius: 12px;
@@ -156,7 +156,8 @@
     .detail {
       grid-template-columns: 1fr auto 1.2fr; /* bio | nav | photo */
       grid-template-areas: "bio nav photo";
-      align-items: start;
+      align-items: center;
+      justify-items: center;
       gap: 1.25rem;
     }
   }
@@ -172,9 +173,24 @@
   }
   .photo {
     grid-area: photo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .bio {
     grid-area: bio;
+    backdrop-filter: blur(6px);
+    white-space: nowrap;
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Photo card */
@@ -212,14 +228,13 @@
     font-weight: 600;
     backdrop-filter: blur(6px);
     white-space: nowrap;
-    padding: 0.4rem 0.8rem;   
+    padding: 0.4rem 0.8rem;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    
   }
 
   /* Bio card */
