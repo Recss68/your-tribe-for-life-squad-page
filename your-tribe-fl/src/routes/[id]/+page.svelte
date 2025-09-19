@@ -151,6 +151,7 @@
       "nav"
       "photo"
       "bio";
+    justify-items: center;
   }
   @media (min-width: 1024px) {
     .detail {
@@ -203,6 +204,9 @@
   .mugshot {
     position: relative;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .mugshot img {
     display: block;
