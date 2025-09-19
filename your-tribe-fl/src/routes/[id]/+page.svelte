@@ -180,7 +180,7 @@
   .bio {
     grid-area: bio;
     backdrop-filter: blur(6px);
-    white-space: nowrap;
+    white-space: normal;
     padding: 0.4rem 0.8rem;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(7px);
