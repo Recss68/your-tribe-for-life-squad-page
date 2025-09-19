@@ -1,6 +1,6 @@
 # Inzichten uit dit project
 
-Teamvragen ronde
+## Teamvragen ronde
 
 Doe een rondje per vraag
 
@@ -9,7 +9,7 @@ Doe een rondje per vraag
 - Wat zouden we de volgende keer beter willen doen als team?
 - Welke code conventies hebben we toegepast?
 
-2. Individuele feedback
+## Individuele feedback
 
 Geef feedback aan teamleden
 
