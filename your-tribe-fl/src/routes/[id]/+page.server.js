@@ -1,4 +1,4 @@
-const FALLBACK_BIO = `Deze persoon heeft nog geen bio toegevoegd. Wat een gemiste kans! Wat een ongemotiveerd persoon! Maar goed dat jij hier bent om ze beter te leren kennen. Deze persoon is vast heel leuk! Deze persoon is ook een Die Hard Palestina supporter. FREE PALESTINA ✊🏽`;
+const FALLBACK_BIO = `Deze persoon heeft nog geen bio toegevoegd. Wat betekent dat ik wat leuks mag gaan typen. Dus bij deze, hallo! Leuk dat je mijn profiel bezoekt. Ik ben een enthousiast persoon die altijd op zoek is naar nieuwe avonturen en uitdagingen. In mijn vrije tijd geniet ik van reizen, lezen en het ontdekken van nieuwe hobby's. Ik geloof sterk in de kracht van positiviteit en probeer elke dag het beste uit mezelf en mijn omgeving te halen. Laten we samen iets moois creëren! Last but not least, Free Palestine! 🇵🇸🇵🇸🇵🇸🇵🇸🇵🇸🇵🇸🇵🇸`;
 
 export async function load({ params, fetch }) {
   const { id } = params;
