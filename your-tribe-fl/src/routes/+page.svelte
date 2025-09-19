@@ -20,11 +20,12 @@
   <!-- HEADING GRID -->
   <div class="top-grid">
     <section class="home-heading">
-      <p> FDND is dé HBO-opleiding voor Frontend Development in Nederland, in twee jaar stomen wij jou klaar voor het werkveld.</p>
-      <p>Je leert bij ons niet alleen met de nieuwste technieken werken om websites te bouwen maar ook de softskills van het vak, zoals samenwerken en tijdinschatten. </p>
-      <h2>meet 
-        the 
-        members</h2>
+      <p>FDND is dé HBO-opleiding voor Frontend Development in Nederland, in twee jaar stomen wij jou klaar voor het werkveld.</p>
+      <p>
+        Je leert bij ons niet alleen met de nieuwste technieken werken om websites te bouwen maar ook de soft-skills van het vak, zoals samenwerken en
+        tijd inschatten.
+      </p>
+      <h2>meet the members</h2>
     </section>
   </div>
 
@@ -37,6 +38,6 @@
 
   <!-- BOTTOM RIGHT GRID -->
   <div class="right-grid">
-    <ProfileCard {members}/>
+    <ProfileCard {members} />
   </div>
 </div>
